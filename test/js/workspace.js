@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // new_workspace.html 내용을 한 번만 로드
         if (newWorkspaceContent.innerHTML.trim() === '') {
-            fetch('new_workspace.html')
+            fetch('new_workspace.jsp')
                 .then(response => response.text())
                 .then(html => {
                     // HTML 문자열을 DOM 파서로 파싱

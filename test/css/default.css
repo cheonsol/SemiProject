@@ -47,6 +47,7 @@
 }
 .button:hover{
     scale: 1.02;
+    cursor:pointer;
 }
 .tab_list{
     width : 308px;    

@@ -10,3 +10,6 @@
     border-radius: 14px;
     flex:1; 
 }
+.task_title{
+    padding-left:10px;
+}

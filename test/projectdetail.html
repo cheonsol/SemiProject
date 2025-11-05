@@ -6,6 +6,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/projectdetail.css">
         <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/new.css">
+        <script src="js/projectdetail.js" defer></script>
+        <script src="js/setWorkspace.js" defer></script>
         </head>
         <div>
         <div class ="navigator">
@@ -27,7 +30,7 @@
                             </div>
                         </div>
                         <div class ="header_button">
-                            <input type="button" value ="워크스페이스 설정" class = "button">
+                            <input type="button" value ="프로젝트 설정" class = "button" id="setWorkspaceButton">
                         </div>
                     </div>
                     
@@ -96,14 +99,14 @@
                             </div>
                         </div>
                         <div class ="header_button">
-                            <input type="button" value ="+ 새 프로젝트" class = "button">
+                            <input type="button" value ="+ 새 프로젝트" class = "button" id="createProjectButton">
                         </div>
                     </div>
                     <div class ="projectmenu">
                    
                  <div class ="detail_box">
                             <div class = "box_body">
-                                    <div class = "title">
+                                    <div class = "task_title">
                                         <div>시작일</div>
                                     </div>
                                     <div class ="detail_box">
@@ -153,7 +156,7 @@
                         
                         <div class ="detail_box">
                             <div class = "box_body">
-                                    <div class = "title">
+                                    <div class = "task_title">
                                         <div>시작일</div>
                                     </div>
                                     <div class ="detail_box">
@@ -196,7 +199,7 @@
                             </div>
                                <div class ="detail_box">
                             <div class = "box_body">
-                                    <div class = "title">
+                                    <div class = "task_title">
                                         <div>시작일</div>
                                     </div>
                                     <div class ="detail_box">
@@ -241,12 +244,25 @@
                     </div>
                     </div>
                     </div>  
-                </div>
+                </div>  
                 </div>
             </div>
         
             <div class ="footer">
             1
             </div>
+            <div id ="modalOverlay" class="modal-overlay"></div>
+                 <div id="setWorkspaceModal" class="modal-container">
+                <div class="modal-content">
+                    <button class ="modal-close-button">&times;</button>
+                    <div id = "setWorkspaceContent" class="new_Content"></div>
+                </div>
+</div>
+            <div id="newProjectModal" class="modal-container">
+                <div class="modal-content">
+                    <button class ="modal-close-button">&times;</button>
+                    <div id = "newProjectContent" class="new_Content"></div>
+                </div>
+</div>
         </body>
     </html>
